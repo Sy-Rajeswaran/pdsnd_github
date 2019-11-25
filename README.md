@@ -8,7 +8,13 @@ In this project the goal is from the use of Python to explore data related to bi
 
 ### Files used
 3 csv files are used which include the data sets and the python file that reads the csv files and takes in user input.
+The csv files are:
+chicago.csv
+new_york_city.csv
+washington.csv
+
+There is a one python file called bikeshare_2.py which is the script file that takes user input to filter the data and provide all the statistics.
 
 ### Credits
-Data provided by Motivate
+Data provided by Motivate and by Udacity 
 
