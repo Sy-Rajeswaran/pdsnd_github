@@ -40,7 +40,7 @@ def get_filters():
         else:
             print("invalid input")
 
-        if (city.lower() in city_list and month.lower() in month_list) or (city.lower() in city_list and day.lower() in days_list):
+        if (city.lower() in city_list and month.lower() in month_list and day.lower() in days_list):
             isValid = True
         else:
             print('One or more of the inputs is not a valid entry. Please give valid inputs')
