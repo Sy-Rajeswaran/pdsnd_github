@@ -41,7 +41,7 @@ def get_filters():
         else:
             print("invalid input")
 
-        if (city.lower() in city_list and month.lower() in month_list) or (city.lower() in city_list and day.lower() in days_list):
+        if (city.lower() in city_list and month.lower() in month_list and day.lower() in days_list):
             isValid = True
         else:
             print('One or more of the inputs is not a valid entry. Please give valid inputs')
@@ -187,12 +187,12 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        
+        #Shows the raw data of the data frame 
         while True:
             print(df.head().values)
-            iterate=input("Would you like to see more individual trip data? Type yes or no: ")
+            raw_data=input("Would you like to see more individual trip data? Type yes or no: ")
             df.drop(df.index[:5], inplace=True)
-            if iterate.lower() !='yes':
+            if raw_data.lower() !='yes':
                 break
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
