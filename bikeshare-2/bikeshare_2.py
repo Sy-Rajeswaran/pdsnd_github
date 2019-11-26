@@ -192,12 +192,12 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        
+        #Shows the raw data of the data frame 
         while True:
             print(df.head().values)
-            iterate=input("Would you like to see more individual trip data? Type yes or no: ")
+            raw_data=input("Would you like to see more individual trip data? Type yes or no: ")
             df.drop(df.index[:5], inplace=True)
-            if iterate.lower() !='yes':
+            if raw_data.lower() !='yes':
                 break
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
